@@ -1,0 +1,79 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.welcome {
+    margin-top: 50px;
+}
+
+.welcome h1 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.welcome p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.branch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.branch-card {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    background: #f8f8f8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.branch-card:hover {
+    background: #e8e8e8;
+}
+
+.branch-icon {
+    font-size: 40px;
+    color: #2c2c54;
+    margin-right: 15px;
+}
+
+.branch-info {
+    text-align: left;
+}
+
+.branch-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.branch-info p {
+    font-size: 12px;
+    color: gray;
+}
+
+.create-btn {
+    background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.create-btn:hover {
+    background: black;
+    color: white;
+}
