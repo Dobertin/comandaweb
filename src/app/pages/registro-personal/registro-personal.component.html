@@ -1,1 +1,94 @@
-<p>registro-personal works!</p>
+<div class="row">
+    <!-- TÍTULO Y BOTÓN DE EDITAR ROLES -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="fw-bold">Lista de Personal</h2>
+        <button class="btn btn-success"><i class="fas fa-edit"></i> Editar Roles</button>
+        <input type="text" class="form-control w-25" placeholder="🔍 Buscar personal">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <!-- LISTA DE PERSONAL -->
+        <div class="row row-cols-3 row-cols-md-3 g-3">
+            <div class="col text-center">
+                <div class="position-relative">
+                    <img src="https://via.placeholder.com/80" class="profile-img" alt="Perfil">
+                    <i class="fas fa-edit edit-button"></i>
+                </div>
+                <p>Admin</p>
+            </div>
+            <div class="col text-center">
+                <div class="position-relative">
+                    <img src="https://via.placeholder.com/80" class="profile-img" alt="Perfil">
+                    <i class="fas fa-edit edit-button"></i>
+                </div>
+                <p>Ventas</p>
+            </div>
+            <div class="col text-center">
+                <div class="position-relative">
+                    <img src="https://via.placeholder.com/80" class="profile-img" alt="Perfil">
+                    <i class="fas fa-edit edit-button"></i>
+                </div>
+                <p>Alfredo</p>
+            </div>
+            <div class="col text-center">
+                <div class="position-relative">
+                    <img src="https://via.placeholder.com/80" class="profile-img" alt="Perfil">
+                    <i class="fas fa-edit edit-button"></i>
+                </div>
+                <p>Alfredo2</p>
+            </div>
+            <div class="col text-center">
+                <div class="position-relative">
+                    <img src="https://via.placeholder.com/80" class="profile-img" alt="Perfil">
+                    <i class="fas fa-edit edit-button"></i>
+                </div>
+                <p>Alfredo3</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <!-- FORMULARIO DE EDICIÓN DE PERSONAL -->
+        <div class="card custom-card mt-4">
+            <h5 class="text-center fw-bold">AGREGAR/EDITAR PERSONAL</h5>
+
+            <form>
+                <label class="mt-2">Nombre</label>
+                <input type="text" class="form-control custom-input" placeholder="Nombre">
+
+                <label class="mt-2">Apellidos</label>
+                <input type="text" class="form-control custom-input" placeholder="Apellidos">
+
+                <label class="mt-2">Usuario de sistema</label>
+                <input type="text" class="form-control custom-input" placeholder="Usuario">
+
+                <label class="mt-2">Nueva/Actual Contraseña</label>
+                <input type="password" class="form-control custom-input" placeholder="Contraseña">
+
+                <label class="mt-2">Confirmar Contraseña</label>
+                <input type="password" class="form-control custom-input" placeholder="Confirmar contraseña">
+
+                <label class="mt-2">Nivel de Acceso</label>
+                <select class="form-select custom-input">
+                    <option>Seleccione nivel</option>
+                </select>
+            </form>
+
+            <!-- Imagen -->
+            <div class="text-center mt-3">
+                <p class="mb-1">Escoge una foto</p>
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/80" class="rounded-circle border" alt="Imagen">
+                    <i class="fas fa-edit edit-icon"></i>
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-success flex-fill me-1">Agregar / Editar</button>
+                <button class="btn btn-danger flex-fill ms-1">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>

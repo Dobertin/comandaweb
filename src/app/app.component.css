@@ -1,5 +1,5 @@
 :host{
-    width: 100%;
+    width: 100%;            
     display: grid;
     grid-template-areas: 
     "header"
@@ -9,8 +9,8 @@
 }
 .content{
     display: block;
-    background-color: yellow;
+    background-color: white;
     grid-area: content;
-    margin-top: 60px;
-    height: 1500px;
+    font-family: 'Courier Prime', monospace;
+    margin: 90px 15px 0 15px;
 }

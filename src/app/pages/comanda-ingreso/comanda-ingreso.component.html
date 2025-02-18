@@ -1,1 +1,179 @@
-<p>comanda-ingreso works!</p>
+<!-- Botones de selección de mostrador y mozos -->
+<div class="row mb-4 text-center">
+    <div class="col"><button class="btn btn-outline-dark w-100 py-2">Mostrador</button></div>
+    <div class="col"><button class="btn btn-outline-dark w-100 py-2">Mozo 1</button></div>
+    <div class="col"><button class="btn btn-outline-dark w-100 py-2">Mozo 2</button></div>
+    <div class="col"><button class="btn btn-outline-dark w-100 py-2">Mozo 3</button></div>
+</div>
+
+<div class="row">
+    <!-- Columna de Categorías -->
+    <div class="col-md-2">
+        <h4 class="fw-bold">Categorías</h4>
+        <button class="btn-categoria active">Galletas</button>
+        <button class="btn-categoria active">Dulces</button>
+        <button class="btn-categoria">Saladas</button>
+        <h4 class="fw-bold mt-3">Frutas</h4>
+        <button class="btn-categoria">Deshidratadas</button>
+        <button class="btn-categoria">Naturales</button>
+        <button class="btn-categoria">Dulces</button>
+    </div>
+
+    <!-- Columna de Productos -->
+    <div class="col-md-5">
+        <h4 class="fw-bold text-center">Productos</h4>
+        <div class="row">
+            <div class="col-3 producto">
+                <img src="https://via.placeholder.com/130" alt="Galleta 1">
+                <p>Galleta 1</p>
+            </div>
+            <div class="col-3 producto">
+                <img src="https://via.placeholder.com/130" alt="Galleta 2">
+                <p>Galleta 2</p>
+            </div>
+            <div class="col-3 producto">
+                <img src="https://via.placeholder.com/130" alt="Galleta 4">
+                <p>Galleta 4</p>
+            </div>
+            <div class="col-3 producto">
+                <img src="https://via.placeholder.com/130" alt="Galleta 5">
+                <p>Galleta 5</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Espacio reservado para la sección de formulario -->
+    <div class="col-md-5">
+        <div class="form-box shadow">
+            <h4>Comanda N° 12222</h4>
+    
+            <!-- Fila Producto -->
+            <div class="mb-2">
+                <label class="fw-bold">Producto:</label>
+                <span class="form-control d-inline-block w-auto bg-light">Crema</span>
+            </div>
+    
+            <!-- Fila Presentación y Precio -->
+            <div class="d-flex align-items-center mb-2">
+                <label class="fw-bold me-2">Presentación:</label>
+                <select class="form-select w-auto">
+                    <option>Envase</option>
+                </select>
+                <label class="fw-bold mx-2">P/U:</label>
+                <input type="text" class="form-control w-auto input-small" value="60.6 S/." readonly>
+            </div>
+    
+            <!-- Fila Cantidad y Combinar -->
+            <div class="d-flex align-items-center mb-2">
+                <label class="fw-bold me-2">Cantidad:</label>
+                <input type="number" class="form-control w-auto input-small text-center" value="12">
+                <label class="fw-bold mx-3">Combinar:</label>
+                <input type="checkbox" class="form-check-input">
+            </div>
+    
+            <!-- Fila Porcentaje Producto -->
+            <div class="d-flex align-items-center mb-3">
+                <label class="fw-bold me-2">Porcentaje Producto:</label>
+                <input type="number" class="form-control w-auto input-small text-center" value="40">
+                <button class="btn btn-success btn-sm ms-2"><i class="fas fa-plus"></i></button>
+            </div>
+    
+            <!-- Tabla de Productos -->
+            <table class="table table-bordered">
+                <thead class="table-light">
+                    <tr>
+                        <th>Productos</th>
+                        <th>%</th>
+                        <th>Empaque</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Flan</td>
+                        <td>60%</td>
+                        <td>Envase 500 gr</td>
+                        <td>
+                            <button class="icon-btn text-primary"><i class="fas fa-edit"></i></button>
+                            <button class="icon-btn text-danger"><i class="fas fa-times-circle"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Crema</td>
+                        <td>40%</td>
+                        <td></td>
+                        <td>
+                            <button class="icon-btn text-primary"><i class="fas fa-edit"></i></button>
+                            <button class="icon-btn text-danger"><i class="fas fa-times-circle"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Botón Agregar -->
+            <button class="btn btn-add">Agregar</button>
+    
+            <!-- Tabla de Pedidos -->
+            <table class="table mt-3">
+                <thead class="table-light">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cant</th>
+                        <th>Empaque</th>
+                        <th>Mix</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Flan 30% Gelatina 50% Crema 20%</td>
+                        <td>2</td>
+                        <td>Envase 500 gr</td>
+                        <td><i class="fas fa-check text-success"></i></td>
+                        <td>
+                            <button class="icon-btn text-primary"><i class="fas fa-edit"></i></button>
+                            <button class="icon-btn text-danger"><i class="fas fa-times-circle"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Galleta 1</td>
+                        <td>2</td>
+                        <td>Caja 200 gr</td>
+                        <td><i class="fas fa-times text-danger"></i></td>
+                        <td>
+                            <button class="icon-btn text-primary"><i class="fas fa-edit"></i></button>
+                            <button class="icon-btn text-danger"><i class="fas fa-times-circle"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Galleta 2</td>
+                        <td>12</td>
+                        <td>Taper 500 gr</td>
+                        <td><i class="fas fa-times text-danger"></i></td>
+                        <td>
+                            <button class="icon-btn text-primary"><i class="fas fa-edit"></i></button>
+                            <button class="icon-btn text-danger"><i class="fas fa-times-circle"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Galleta 3</td>
+                        <td>5</td>
+                        <td>Sobre 20 gr</td>
+                        <td><i class="fas fa-times text-danger"></i></td>
+                        <td>
+                            <button class="icon-btn text-primary"><i class="fas fa-edit"></i></button>
+                            <button class="icon-btn text-danger"><i class="fas fa-times-circle"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>       
+    </div>
+</div>
+
+<!-- Botón de imprimir -->
+<div class="d-flex justify-content-end mt-4">
+    <button class="btn-imprimir">
+        <i class="fas fa-print me-2"></i> IMPRIMIR
+    </button>
+</div>

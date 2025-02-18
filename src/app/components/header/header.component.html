@@ -3,45 +3,52 @@
     <div class="date">Hoy es <span id="current-date"></span></div>
     <nav class="nav">
         <ul class="menu">
-            <li class="menu-item">
-                <a routerLink="/" class="menu-link">Home</a>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" routerLink="/" >
+                  Home
+                </button>                
             </li>
-            <li class="menu-item">
-                <a class="menu-link">Comandas</a>
-                <ul class="submenu">
-                    <li>
-                        <a routerLink="/comanda-ingreso" class="submenu-link">Ingreso</a>
-                    </li>
-                </ul>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-1 clolor-black collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    Comandas
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a routerLink="/comanda-ingreso"  class="link-body-emphasis d-inline-flex text-decoration-none rounded">Ingreso</a></li>
+                  </ul>
+                </div>
             </li>
-            <li class="menu-item">
-                <a class="menu-link">Registros</a>
-                <ul class="submenu">
-                    <li>
-                        <a routerLink="/registros-producto" class="submenu-link">Productos</a>
-                    </li>
-                    <li>
-                        <a routerLink="/registros-personal" class="submenu-link">Personal</a>
-                    </li>
-                </ul>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-1 clolor-black collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    Registros
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a routerLink="/registros-producto"  class="link-body-emphasis d-inline-flex text-decoration-none rounded">Productos</a></li>
+                    <li><a routerLink="/registros-personal"  class="link-body-emphasis d-inline-flex text-decoration-none rounded">Personal</a></li>
+                  </ul>
+                </div>
             </li>
-            <li class="menu-item">
-                <a class="menu-link">Reportes</a>
-                <ul class="submenu">
-                    <li>
-                        <a routerLink="/reporte-comanda" class="submenu-link">Comanda</a>
-                    </li>
-                </ul>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-1 clolor-black collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    Reportes
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a routerLink="/reporte-comanda"  class="link-body-emphasis d-inline-flex text-decoration-none rounded">Comanda</a></li>
+                  </ul>
+                </div>
             </li>
-            <li class="menu-item">
-                <a routerLink="/help" lass="menu-link">Ayuda</a>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" routerLink="/help" >
+                    Ayuda
+                </button>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" routerLink="/help" >
+                    CerrarSesion
+                </button>
             </li>
         </ul>
-        <!-- <a routerLink="/" >Home</a>
-        <a routerLink="/comandas" >Comandas</a>
-        <a routerLink="/registros">Registros</a>
-        <a routerLink="/reportes">Reportes</a>
-        <a routerLink="/ayuda">Ayuda</a>
-        <a routerLink="/ingreso">Ingreso</a> -->
     </nav>
 </header>

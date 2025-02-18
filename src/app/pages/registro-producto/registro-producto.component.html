@@ -1,1 +1,139 @@
-<p>registro-producto works!</p>
+<div class="row">
+    <div class="col-md-7">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>Lista de Productos</h2>
+            <div class="d-flex">
+                <button class="btn btn-success me-2"><i class="fas fa-edit"></i> Editar Categorías</button>
+                <input type="text" class="form-control" placeholder="🔍 Buscar" style="max-width: 200px;">
+            </div>
+        </div>
+
+        <!-- Lista de Productos -->
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4">
+            <!-- Producto (Repetir este bloque para más productos) -->
+            <div class="col">
+                <div class="position-relative text-center">
+                    <img src="https://via.placeholder.com/100" class="product-img" alt="Producto">
+                    <i class="fas fa-edit edit-icon"></i>
+                    <p class="mt-2">Producto 1</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="position-relative text-center">
+                    <img src="https://via.placeholder.com/100" class="product-img" alt="Producto">
+                    <i class="fas fa-edit edit-icon"></i>
+                    <p class="mt-2">Producto 2</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="position-relative text-center">
+                    <img src="https://via.placeholder.com/100" class="product-img" alt="Producto">
+                    <i class="fas fa-edit edit-icon"></i>
+                    <p class="mt-2">Producto 3</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="position-relative text-center">
+                    <img src="https://via.placeholder.com/100" class="product-img" alt="Producto">
+                    <i class="fas fa-edit edit-icon"></i>
+                    <p class="mt-2">Producto 4</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="position-relative text-center">
+                    <img src="https://via.placeholder.com/100" class="product-img" alt="Producto">
+                    <i class="fas fa-edit edit-icon"></i>
+                    <p class="mt-2">Producto 5</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="position-relative text-center">
+                    <img src="https://via.placeholder.com/100" class="product-img" alt="Producto">
+                    <i class="fas fa-edit edit-icon"></i>
+                    <p class="mt-2">Producto 6</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="form-box shadow">
+            <h5 class="text-center fw-bold">AGREGAR/EDITAR PRODUCTO</h5>
+
+            <!-- Formulario -->
+            <form>
+                <label class="mt-2">Nombre</label>
+                <input type="text" class="form-control custom-input" placeholder="Nombre del producto">
+
+                <label class="mt-2">Categoría</label>
+                <select class="form-select custom-input">
+                    <option>Seleccione categoría</option>
+                </select>
+
+                <label class="mt-2">Subcategoría</label>
+                <select class="form-select custom-input">
+                    <option>Seleccione subcategoría</option>
+                </select>
+
+                <label class="mt-2">Presentaciones</label>
+                <select class="form-select custom-input">
+                    <option>Seleccione presentación</option>
+                </select>
+
+                <label class="mt-2">Peso (gr):</label>
+                <input type="number" class="form-control custom-input" placeholder="Peso">
+
+                <label class="mt-2">Precio (S/.):</label>
+                <input type="number" class="form-control custom-input" placeholder="Precio">
+
+                <button type="button" class="btn btn-success w-100 mt-3">Agregar</button>
+            </form>
+
+            <!-- Tabla -->
+            <table class="table mt-3">
+                <thead>
+                    <tr>
+                        <th>Presentación</th>
+                        <th>Peso</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Caja</td>
+                        <td>200 gr</td>
+                        <td>0.50 S/.</td>
+                        <td>
+                            <i class="fas fa-edit text-primary me-2"></i>
+                            <i class="fas fa-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Envase</td>
+                        <td>500 gr</td>
+                        <td>2.50 S/.</td>
+                        <td>
+                            <i class="fas fa-edit text-primary me-2"></i>
+                            <i class="fas fa-trash text-danger"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Imagen -->
+            <div class="text-center">
+                <p class="mb-1">Escoge una foto</p>
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/80" class="rounded-circle border" alt="Imagen">
+                    <i class="fas fa-edit edit-icon"></i>
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-success flex-fill me-1">Grabar Datos</button>
+                <button class="btn btn-danger flex-fill ms-1">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
