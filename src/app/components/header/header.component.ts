@@ -1,13 +1,13 @@
 import { Component,OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-layout',
-  standalone: true, // Asegurar que es standalone
-  imports: [],
-  templateUrl: './layout.component.html',
-  styleUrl: './layout.component.css'
+  selector: 'app-header',
+  imports: [RouterLink],
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css'
 })
-export class LayoutComponent implements OnInit {
+export class HeaderComponent implements OnInit {
 
   currentDate: string = '';
 

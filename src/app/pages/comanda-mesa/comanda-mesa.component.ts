@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-comanda-mesa',
-  imports: [],
+  standalone: true, // 👈 Asegurar que es standalone
+  imports: [CommonModule,RouterLink, RouterOutlet], // 👈 Importar CommonModule para usar *ngFor
   templateUrl: './comanda-mesa.component.html',
-  styleUrl: './comanda-mesa.component.css'
+  styleUrls: ['./comanda-mesa.component.css']
 })
 export class ComandaMesaComponent {
   mesas = [
@@ -17,8 +21,10 @@ export class ComandaMesaComponent {
     { id: 6, nombre: 'MESA 6' },
     { id: 7, nombre: 'MESA 7' }
   ];
+id: any;
 
   seleccionarMesa(mesa: any) {
     console.log(`Seleccionaste ${mesa.nombre}`);
+    
   }
 }

@@ -1,9 +1,10 @@
 <div class="container">
     <h1>SELECCIONA UNA MESA</h1>
-    <div class="mesas-grid">
-        <div *ngFor="let mesa of mesas" class="mesa-item" (click)="seleccionarMesa(mesa)">
-            <img src="https://placehold.co/100x100?text=Mesa" alt="Ilustración de una mesa con cuatro sillas">
-            <p>{{ mesa.nombre }}</p>
-        </div>
-    </div>
+    <a class="mesa-item" routerLink="/comanda-ingreso/ingreso">
+        <div >
+        <img src="https://placehold.co/100x100?text=Mesa" alt="Ilustración de una mesa con cuatro sillas">
+            <p>aaaa</p>
+        </div>        
+    </a>
+    <router-outlet />
 </div>
