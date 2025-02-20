@@ -1,0 +1,9 @@
+<div class="container">
+    <h2>Iniciar Sesión</h2>
+    <form (submitq)="onLogin()">
+      <input type="email" [(ngModel)]="email" placeholder="Correo" required class="form-control" name="email">
+      <input type="password" [(ngModel)]="password" placeholder="Contraseña" required class="form-control" name="password">
+      <button type="submit" class="btn btn-primary mt-2">Ingresar</button>
+    </form>
+  </div>
+  

@@ -7,11 +7,15 @@ import { RegistroPersonalComponent } from './pages/registro-personal/registro-pe
 import { ReporteComandaComponent } from './pages/reporte-comanda/reporte-comanda.component';
 import { AyudaComponent } from './pages/ayuda/ayuda.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { LoginComponent } from './components/login/login.component';
+import { ComandaComponent } from './pages/comanda/comanda.component';
 
-export const routes: Routes = [
+export const routes: Routes = [  
   { path: '', component: HomeComponent }, // Página principal
-  { path: 'comanda-ingreso', component: ComandaMesaComponent,
+  { path: 'login', component: LoginComponent },
+  { path: 'comanda', component: ComandaComponent,
     children: [
+      { path: 'mesa', component: ComandaMesaComponent },
       { path: 'ingreso', component: ComandaIngresoComponent }
     ]
    },
