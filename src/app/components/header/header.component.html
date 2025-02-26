@@ -1,6 +1,7 @@
 <header>
     <div class="logo">#Empresa</div>
-    <div class="date">Hoy es <span id="current-date"></span></div>
+    <div class="date">Hoy es <span>{{ currentDate }}</span></div>
+    <div class="session-time">Sesion expira en: <span>{{ sessionTimeLeft }}</span></div>
     <nav class="nav">
         <ul class="menu">
             <li class="mb-1">
@@ -45,10 +46,11 @@
                 </button>
             </li>
             <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" routerLink="/help" >
-                    CerrarSesion
-                </button>
-            </li>
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  (click)="logout()">
+                  Cerrar Sesión
+              </button>
+          </li>
         </ul>
     </nav>
 </header>

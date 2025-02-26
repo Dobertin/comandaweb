@@ -9,19 +9,25 @@ import { AyudaComponent } from './pages/ayuda/ayuda.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LoginComponent } from './components/login/login.component';
 import { ComandaComponent } from './pages/comanda/comanda.component';
+import { AuthGuard } from './guards/auth.guard';
 
 export const routes: Routes = [  
-  { path: '', component: HomeComponent }, // Página principal
   { path: 'login', component: LoginComponent },
-  { path: 'comanda', component: ComandaComponent,
+
+  // Rutas protegidas con AuthGuard
+  { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+  { path: 'comanda', component: ComandaComponent, canActivate: [AuthGuard],
     children: [
-      { path: 'mesa', component: ComandaMesaComponent },
-      { path: 'ingreso', component: ComandaIngresoComponent }
+      { path: 'mesa', component: ComandaMesaComponent, canActivate: [AuthGuard] },
+      { path: 'ingreso', component: ComandaIngresoComponent, canActivate: [AuthGuard] }
     ]
    },
-   { path: 'registros-producto', component:RegistroProductoComponent },
-   { path: 'registros-personal', component:RegistroPersonalComponent },
-   { path: 'reporte-comanda', component:ReporteComandaComponent },
-   { path: 'help', component:AyudaComponent },
-   { path: '**', component:NotfoundComponent },
+   { path: 'registros-producto', component: RegistroProductoComponent, canActivate: [AuthGuard] },
+   { path: 'registros-personal', component: RegistroPersonalComponent, canActivate: [AuthGuard] },
+   { path: 'reporte-comanda', component: ReporteComandaComponent, canActivate: [AuthGuard] },
+   { path: 'help', component: AyudaComponent },
+
+   // Si no existe el token, redirige al login automáticamente
+   { path: '', redirectTo: '/login', pathMatch: 'full' },
+   { path: '**', component: NotfoundComponent },
 ];
